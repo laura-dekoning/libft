@@ -6,7 +6,7 @@
 #    By: lade-kon <lade-kon@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/10/03 12:39:54 by lde-koni      #+#    #+#                  #
-#    Updated: 2024/02/22 10:27:50 by lade-kon      ########   odam.nl          #
+#    Updated: 2024/02/29 18:12:22 by lade-kon      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -102,12 +102,12 @@ NAME		:=	libft.a
 all: $(NAME)
 
 $(NAME) : $(OBJ_FILES) $(INCL)
-	ar -rcs $(NAME) $?
+	@ar -rcs $(NAME) $?
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@mkdir -p $(addprefix $(OBJ_DIR)/, $(DIRS))
 	@mkdir -p $(addprefix $(OBJ_DIR)/$(LIBFT_DIR)/, $(SRC_DIRS))
-	$(CC) $(CFLAGS) -I $(INCL_DIR) -c $< -o $@ 
+	@$(CC) $(CFLAGS) -I $(INCL_DIR) -c $< -o $@ 
 
 norminette:
 	@echo "${CYAN}🧐 Checking the Norm...${RESET}"
@@ -115,11 +115,11 @@ norminette:
 	@echo "${GREEN} Norm-i-netting complete. Files are NORM PROOF!${RESET}" 
 
 clean:
-	rm -rf $(OBJ_FILES)
-	rm -rf $(OBJ_DIR)
+	@rm -rf $(OBJ_FILES)
+	@rm -rf $(OBJ_DIR)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 
