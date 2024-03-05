@@ -6,7 +6,7 @@
 /*   By: lade-kon <lade-kon@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/14 00:01:54 by lade-kon      #+#    #+#                 */
-/*   Updated: 2024/01/30 16:08:31 by lade-kon      ########   odam.nl         */
+/*   Updated: 2024/03/05 20:58:33 by lade-kon      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*new_line(char *line)
 		return (line);
 	else
 		line[i + 1] = '\0';
-	new_line = ft_strdup(line);
+	new_line = ft_gnl_strdup(line);
 	return (free(line), new_line);
 }
 
@@ -50,7 +50,7 @@ char	*static_line(char *stash)
 		i++;
 	}
 	if (stash[i] != '\0' && stash[i + 1] != '\0')
-		new_stash = ft_strdup(&stash[i + 1]);
+		new_stash = ft_gnl_strdup(&stash[i + 1]);
 	return (free(stash), new_stash);
 }
 
@@ -63,7 +63,7 @@ char	*read_line(char *stash, int fd)
 		return (NULL);
 	buffer = malloc((BUFFER_SIZE + 1) * sizeof(char));
 	buffer[0] = '\0';
-	while (!ft_strchr(stash, '\n'))
+	while (!ft_gnl_strchr(stash, '\n'))
 	{
 		read_bytes = read(fd, buffer, BUFFER_SIZE);
 		if (read_bytes == -1)
@@ -71,7 +71,7 @@ char	*read_line(char *stash, int fd)
 		if (read_bytes == 0)
 			break ;
 		buffer[read_bytes] = '\0';
-		stash = ft_strjoin(stash, buffer);
+		stash = ft_gnl_strjoin(stash, buffer);
 		if (!stash)
 			return (free(buffer), NULL);
 	}
@@ -93,9 +93,9 @@ char	*get_next_line(int fd)
 		return (NULL);
 	}
 	if (!stash)
-		stash = ft_strdup("");
+		stash = ft_gnl_strdup("");
 	stash = read_line(stash, fd);
-	line = ft_strdup(stash);
+	line = ft_gnl_strdup(stash);
 	line = new_line(line);
 	stash = static_line(stash);
 	return (line);
