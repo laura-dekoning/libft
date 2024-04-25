@@ -6,7 +6,7 @@
 /*   By: lade-kon <lade-kon@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 07:39:09 by lde-koni      #+#    #+#                 */
-/*   Updated: 2024/04/25 13:10:55 by lade-kon      ########   odam.nl         */
+/*   Updated: 2024/04/25 17:48:38 by lade-kon      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ int			ft_toupper(int c);
 int			ft_tolower(int c);
 char		*ft_strchr(const char *s, int c);
 char		*ft_strrchr(const char *s, int c);
+int			ft_strcmp(const char *str1, const char *str2);
 int			ft_strncmp(const char *str1, const char *str2, size_t count);
 size_t		ft_strlcpy(char *dst, const char *src, size_t size);
 size_t		ft_strlcat(char *dst, const char *src, size_t dstsize);
