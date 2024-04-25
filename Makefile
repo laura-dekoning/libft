@@ -6,7 +6,7 @@
 #    By: lade-kon <lade-kon@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/10/03 12:39:54 by lde-koni      #+#    #+#                  #
-#    Updated: 2024/04/25 17:48:51 by lade-kon      ########   odam.nl          #
+#    Updated: 2024/04/25 18:13:14 by lade-kon      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -81,7 +81,8 @@ SRC_FILES	:=	$(addprefix $(SRC_CLASS)/, \
 				ft_lstdelone.c \
 				ft_lstclear.c \
 				ft_lstiter.c \
-				ft_lstmap.c ) \
+				ft_lstmap.c \
+				ft_lstprint.c ) \
 				$(addprefix $(SRC_PRINTF)/, \
 				ft_printf.c \
 				ft_utils.c \
