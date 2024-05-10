@@ -6,7 +6,7 @@
 /*   By: lade-kon <lade-kon@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 17:01:57 by lde-koni      #+#    #+#                 */
-/*   Updated: 2024/04/11 11:12:49 by lade-kon      ########   odam.nl         */
+/*   Updated: 2024/05/10 16:45:52 by lade-kon      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ void	ft_putstr_fd(char *s, int fd)
 		ft_putchar_fd(*s, fd);
 		s++;
 	}
-	ft_putchar_fd('\n', fd);
 }
 
 // int	main(void)
