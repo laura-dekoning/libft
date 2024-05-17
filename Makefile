@@ -6,17 +6,15 @@
 #    By: lade-kon <lade-kon@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/10/03 12:39:54 by lde-koni      #+#    #+#                  #
-#    Updated: 2024/05/17 11:40:38 by lade-kon      ########   odam.nl          #
+#    Updated: 2024/05/17 11:47:26 by lade-kon      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 CC			:=	cc
 CFLAGS		:=	-Wall -Werror -Wextra
 
-INCL_DIR	:=	incl
-INCL		:=	incl/libft.h \
-				incl/ft_printf.h \
-				incl/get_next_line.h \
+INCLS		:=	incl
+INCL		:=	-I $(INCLS)
 
 SRC_DIR		:=	src
 SRC_LIBFT	:=	libft
@@ -107,13 +105,13 @@ NAME		:=	libft.a
 
 all: $(NAME)
 
-$(NAME) : $(OBJ_FILES) $(INCL)
+$(NAME) : $(OBJ_FILES)
 	@ar -rcs $(NAME) $?
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@mkdir -p $(addprefix $(OBJ_DIR)/, $(DIRS))
 	@mkdir -p $(addprefix $(OBJ_DIR)/$(LIBFT_DIR)/, $(SRC_DIRS))
-	@$(CC) $(CFLAGS) -I $(INCL_DIR) -c $< -o $@ 
+	@$(CC) $(CFLAGS) $(INCL) -c $< -o $@ 
 
 norminette:
 	@echo "${CYAN}🧐 Checking the Norm...${RESET}"

@@ -6,7 +6,7 @@
 /*   By: lade-kon <lade-kon@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 07:39:09 by lde-koni      #+#    #+#                 */
-/*   Updated: 2024/05/17 11:40:55 by lade-kon      ########   odam.nl         */
+/*   Updated: 2024/05/17 11:43:09 by lade-kon      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@
 # include <stdarg.h>
 # include "ft_printf.h"
 # include "get_next_line.h"
+# include "colors.h"
 
 typedef struct s_list
 {
@@ -66,7 +67,7 @@ void		ft_putstr_fd(char *s, int fd);
 void		ft_putendl_fd(char *s, int fd);
 void		ft_putnbr_fd(int n, int fd);
 void		ft_putarr_fd(char **arr, int fd);
-void		ft_puterror_fd(char *str);
+void		ft_puterror_fd(char *str, int fd);
 
 /*Memory*/
 void		*ft_memset(void *s, int c, size_t n);
