@@ -6,7 +6,7 @@
 #    By: lade-kon <lade-kon@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/10/03 12:39:54 by lde-koni      #+#    #+#                  #
-#    Updated: 2024/04/25 18:13:14 by lade-kon      ########   odam.nl          #
+#    Updated: 2024/05/17 11:19:03 by lade-kon      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,8 @@ SRC_FILES	:=	$(addprefix $(SRC_CLASS)/, \
 				ft_isdigit.c \
 				ft_isprint.c \
 				ft_tolower.c \
-				ft_toupper.c ) \
+				ft_toupper.c \
+				ft_isnumber.c ) \
 				$(addprefix $(SRC_MEM)/, \
 				ft_bzero.c	\
 				ft_calloc.c \

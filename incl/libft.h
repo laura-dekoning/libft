@@ -6,7 +6,7 @@
 /*   By: lade-kon <lade-kon@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 07:39:09 by lde-koni      #+#    #+#                 */
-/*   Updated: 2024/04/25 18:13:00 by lade-kon      ########   odam.nl         */
+/*   Updated: 2024/05/17 11:18:45 by lade-kon      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ bool		ft_isdigit(int c);
 bool		ft_isalnum(int c);
 bool		ft_isascii(int c);
 bool		ft_isprint(int c);
+bool		ft_isnumber(char *str);
 
 /*Strings*/
 size_t		ft_strlen(const char *s);
