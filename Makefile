@@ -6,7 +6,7 @@
 #    By: lade-kon <lade-kon@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/10/03 12:39:54 by lde-koni      #+#    #+#                  #
-#    Updated: 2024/05/17 11:19:03 by lade-kon      ########   odam.nl          #
+#    Updated: 2024/05/17 11:40:38 by lade-kon      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,8 @@ SRC_FILES	:=	$(addprefix $(SRC_CLASS)/, \
 				ft_putendl_fd.c \
 				ft_putnbr_fd.c \
 				ft_putstr_fd.c \
-				ft_putarr_fd.c ) \
+				ft_putarr_fd.c \
+				ft_puterror_fd.c ) \
 				$(addprefix $(SRC_STRING)/, \
 				ft_strchr.c \
 				ft_strlcat.c \
