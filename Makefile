@@ -6,7 +6,7 @@
 #    By: lade-kon <lade-kon@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/10/03 12:39:54 by lde-koni      #+#    #+#                  #
-#    Updated: 2024/05/17 11:47:26 by lade-kon      ########   odam.nl          #
+#    Updated: 2024/05/22 21:58:03 by lade-kon      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,6 +63,7 @@ SRC_FILES	:=	$(addprefix $(SRC_CLASS)/, \
 				ft_strrchr.c \
 				ft_strdup.c \
 				ft_strjoin.c \
+				ft_appchar.c \
 				ft_substr.c  \
 				ft_strnstr.c \
 				ft_strtrim.c \
