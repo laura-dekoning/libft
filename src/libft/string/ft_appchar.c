@@ -6,7 +6,7 @@
 /*   By: lade-kon <lade-kon@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/22 21:55:57 by lade-kon      #+#    #+#                 */
-/*   Updated: 2024/05/22 22:07:36 by lade-kon      ########   odam.nl         */
+/*   Updated: 2024/05/22 22:21:19 by lade-kon      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ char	*ft_appchar(char *str, char c)
 	len = ft_strlen(str);
 	result = ft_calloc(len + 2, sizeof(char));
 	if (!result)
-		ft_puterror_fd("Malloc Failed!", STDERR_FILENO);
+		ft_puterror_fd("Memory allocation failed!", STDERR_FILENO);
 	ft_memcpy(result, str, len);
-	ft_memcpy(result + len, c, 1);
+	result[len] = c;
 	return (result);
 }
