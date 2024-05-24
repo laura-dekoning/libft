@@ -6,7 +6,7 @@
 /*   By: lade-kon <lade-kon@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/22 21:55:57 by lade-kon      #+#    #+#                 */
-/*   Updated: 2024/05/22 22:44:10 by lade-kon      ########   odam.nl         */
+/*   Updated: 2024/05/24 13:23:15 by lade-kon      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,12 @@ char	*ft_appchar(char *str, char c)
 	int		len;
 
 	if (!str)
+	{
 		ft_strdup("");
-	printf("Ik kom hier\n");
-	len = ft_strlen(str);
+		len = 0;
+	}
+	else
+		len = ft_strlen(str);
 	result = ft_calloc(len + 2, sizeof(char));
 	if (!result)
 		ft_puterror_fd("Memory allocation failed!", STDERR_FILENO);
