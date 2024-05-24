@@ -6,7 +6,7 @@
 /*   By: lade-kon <lade-kon@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/22 21:55:57 by lade-kon      #+#    #+#                 */
-/*   Updated: 2024/05/24 13:23:15 by lade-kon      ########   odam.nl         */
+/*   Updated: 2024/05/24 15:27:02 by lade-kon      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,9 @@ char	*ft_appchar(char *str, char c)
 	int		len;
 
 	if (!str)
-	{
-		ft_strdup("");
-		len = 0;
-	}
+		str = ft_strdup("");
+	if (!str)
+		return (NULL);
 	else
 		len = ft_strlen(str);
 	result = ft_calloc(len + 2, sizeof(char));
