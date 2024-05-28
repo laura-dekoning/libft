@@ -6,7 +6,7 @@
 #    By: lade-kon <lade-kon@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/10/03 12:39:54 by lde-koni      #+#    #+#                  #
-#    Updated: 2024/05/24 17:24:34 by lade-kon      ########   odam.nl          #
+#    Updated: 2024/05/28 16:47:47 by lade-kon      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,6 +71,7 @@ SRC_FILES	:=	$(addprefix $(SRC_CLASS)/, \
 				ft_strtrim.c \
 				ft_striteri.c \
 				ft_strmapi.c \
+				ft_charvec.c \
 				ft_atoi.c \
 				ft_atol.c \
 				ft_itoa.c \

@@ -6,7 +6,7 @@
 /*   By: lade-kon <lade-kon@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 07:39:09 by lde-koni      #+#    #+#                 */
-/*   Updated: 2024/05/24 17:25:55 by lade-kon      ########   odam.nl         */
+/*   Updated: 2024/05/28 16:48:10 by lade-kon      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,20 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }					t_list;
+
+/**
+ * @brief Struct that represents the vector
+ * 
+ * @param data The string itself
+ * @param len The lenght of the string that is inside the data pointer.
+ * @param capacity The total allocated memory.
+*/
+typedef struct s_vec
+{
+	char			*data;
+	unsigned int	len;
+	unsigned int	capacity;
+}					t_vec;
 
 /*Characters*/
 bool		ft_isalpha(int c);
