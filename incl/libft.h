@@ -6,7 +6,7 @@
 /*   By: lade-kon <lade-kon@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 07:39:09 by lde-koni      #+#    #+#                 */
-/*   Updated: 2024/06/05 12:42:34 by lade-kon      ########   odam.nl         */
+/*   Updated: 2024/06/05 16:38:19 by lade-kon      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,10 @@ char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_appchar(char *str, char c);
 char		*ft_strtrim(char const *s1, char const *set);
 char		**ft_split(char const *s, char c);
+bool		vec_init(t_vec *v, unsigned int size);
+bool		vec_resize(t_vec *v);
+bool		vec_push(t_vec *v, char c);
+void		vec_print(t_vec *v);
 
 /*Writing*/
 void		ft_putchar_fd(char c, int fd);
