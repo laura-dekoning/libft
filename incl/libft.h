@@ -6,7 +6,7 @@
 /*   By: lade-kon <lade-kon@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 07:39:09 by lde-koni      #+#    #+#                 */
-/*   Updated: 2024/05/28 16:48:10 by lade-kon      ########   odam.nl         */
+/*   Updated: 2024/06/05 12:42:34 by lade-kon      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ typedef struct s_list
  * @brief Struct that represents the vector
  * 
  * @param data The string itself
- * @param len The lenght of the string that is inside the data pointer.
+ * @param len The length of the string that is inside the data pointer.
  * @param capacity The total allocated memory.
 */
 typedef struct s_vec
