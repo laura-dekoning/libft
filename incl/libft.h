@@ -6,7 +6,7 @@
 /*   By: lade-kon <lade-kon@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 07:39:09 by lde-koni      #+#    #+#                 */
-/*   Updated: 2024/06/05 16:38:19 by lade-kon      ########   odam.nl         */
+/*   Updated: 2024/06/05 16:41:40 by lade-kon      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,12 @@
 # include "get_next_line.h"
 # include "colors.h"
 
+/**
+ * @brief Struct that represents a node for a linked list.
+ * 
+ * @param content A void pointer to the content you want in the node.
+ * @param next The pointer to the next node.
+*/
 typedef struct s_list
 {
 	void			*content;
@@ -34,7 +40,7 @@ typedef struct s_list
 /**
  * @brief Struct that represents the vector
  * 
- * @param data The string itself
+ * @param data The string itself.
  * @param len The length of the string that is inside the data pointer.
  * @param capacity The total allocated memory.
 */
