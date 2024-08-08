@@ -6,7 +6,7 @@
 #    By: lade-kon <lade-kon@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/10/03 12:39:54 by lde-koni      #+#    #+#                  #
-#    Updated: 2024/05/28 16:47:47 by lade-kon      ########   odam.nl          #
+#    Updated: 2024/08/08 16:36:50 by lade-kon      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +46,8 @@ SRC_FILES	:=	$(addprefix $(SRC_CLASS)/, \
 				ft_memcpy.c \
 				ft_memmove.c \
 				ft_memset.c \
-				ft_memcmp.c ) \
+				ft_memcmp.c \
+				ft_free_arr.c ) \
 				$(addprefix $(SRC_OUTPUT)/, \
 				ft_putchar_fd.c \
 				ft_putendl_fd.c \
