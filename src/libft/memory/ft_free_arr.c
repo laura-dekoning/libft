@@ -6,13 +6,13 @@
 /*   By: lade-kon <lade-kon@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/08/08 16:35:49 by lade-kon      #+#    #+#                 */
-/*   Updated: 2024/08/08 16:36:16 by lade-kon      ########   odam.nl         */
+/*   Updated: 2024/08/29 14:15:09 by lade-kon      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*free_arr(char **arr)
+void	*ft_free_arr(char **arr)
 {
 	int	i;
 
