@@ -6,7 +6,7 @@
 /*   By: lade-kon <lade-kon@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/08/08 16:35:49 by lade-kon      #+#    #+#                 */
-/*   Updated: 2024/09/05 15:12:59 by lade-kon      ########   odam.nl         */
+/*   Updated: 2024/10/11 15:39:36 by lade-kon      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,4 @@ void	ft_free_arr(char **arr)
 		i++;
 	}
 	free(arr);
-	arr = NULL;
 }
