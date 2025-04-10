@@ -6,7 +6,7 @@
 /*   By: lade-kon <lade-kon@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 07:39:09 by lde-koni      #+#    #+#                 */
-/*   Updated: 2025/03/19 18:32:05 by lade-kon      ########   odam.nl         */
+/*   Updated: 2025/04/10 13:04:51 by lade-kon      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ bool		ft_isalnum(int c);
 bool		ft_isascii(int c);
 bool		ft_isprint(int c);
 bool		ft_iswhite(int c);
+bool		ft_issymbol(int c);
 bool		ft_isnumber(char *str);
 
 /*Strings*/
